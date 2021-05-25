@@ -6,3 +6,14 @@
 * *********************************************************************************************************** */
 
 /* ********************************************** Header Files ********************************************** */
+
+/* **********************************************   Function   ********************************************** */
+* Function Name : BmsSender_ReadTemperture
+* Description   : Collect Battery Temperature Data from Sensor/DataSet
+* Arguments	    : -
+* Returns		    : Temperature value in float with one resolution
+/* **********************************************              ********************************************** */
+  float BmsSender_ReadTemperture()
+{
+  
+}
