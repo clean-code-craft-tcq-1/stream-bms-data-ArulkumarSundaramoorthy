@@ -2,16 +2,16 @@
 * File Name   :	Sender_CollectData.c
 * Author      : Arul Kumar Sundaramoorthy
 * Description : Battery Management System(BMS) Data Collection like Battery temperature and State of Charging
-* Functions	  :
+* Functions	  : isInRange, BmsSender_ReadTemperture
 * *********************************************************************************************************** */
 
 /* ********************************************************************************************************** */
-* Function Name : CheckValueInRange
-* Description   : 
-* Arguments	    : 
-* Returns		    : 
+* Function Name : isInRange
+* Description   : Checks the current value within the maximum & minimum value
+* Arguments	    : current_value(float), min_value(float), max_value(float)
+* Returns		    : 1 (Value within range) or 0 (value out of range)
 /* ********************************************************************************************************** */
-int CheckValueInRange(float current_value, float min_value, float max_value)
+int isInRange(float current_value, float min_value, float max_value)
 {
   return((current_value >= min_value) && (current_value <= max_value));
 }
@@ -24,5 +24,7 @@ int CheckValueInRange(float current_value, float min_value, float max_value)
 /* **********************************************              ********************************************** */
   float BmsSender_ReadTemperture()
 {
+  float Temperture;
   
+  isInRange(Temperture, MIN_TEMP, MAX_TEMP);
 }
