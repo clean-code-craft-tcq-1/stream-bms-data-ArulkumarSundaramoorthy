@@ -4,6 +4,7 @@
 * ************************************************************************* */
 #ifndef SENDER_COLLECTDATA_H
 #define SENDER_COLLECTDATA_H
+#pragma once
 
 /* ******************************* Defines ******************************* */
 #define MIN_TEMP    -50.0
