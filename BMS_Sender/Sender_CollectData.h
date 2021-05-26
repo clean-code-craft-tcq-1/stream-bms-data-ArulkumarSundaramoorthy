@@ -14,6 +14,6 @@
 #define ERROR_SOC   255
 
 /* ***************************** Prototypes ***************************** */
-
+int isInRange(float current_value, float min_value, float max_value);
 
 #endif
