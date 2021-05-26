@@ -15,5 +15,6 @@
 
 /* ***************************** Prototypes ***************************** */
 int isInRange(float current_value, float min_value, float max_value);
+float BmsSender_ReadTemperture();
 
 #endif
