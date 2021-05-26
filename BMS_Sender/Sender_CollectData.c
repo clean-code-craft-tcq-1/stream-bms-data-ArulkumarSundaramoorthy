@@ -6,11 +6,15 @@
 * *********************************************************************************************************** */
 
 /* ********************************************************************************************************** */
-* Function Name : Check
+* Function Name : CheckValueInRange
 * Description   : 
 * Arguments	    : 
 * Returns		    : 
 /* ********************************************************************************************************** */
+int CheckValueInRange(float current_value, float min_value, float max_value)
+{
+  return((current_value >= min_value) && (current_value <= max_value));
+}
 
 /* **********************************************   Function   ********************************************** */
 * Function Name : BmsSender_ReadTemperture
