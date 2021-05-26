@@ -5,6 +5,10 @@
 * Functions   : isInRange, BmsSender_ReadTemperture, BmsSender_ReadSOC
 * *********************************************************************************************************** */
 
+/* **************************************** Header Files **************************************************** */
+#include "Sender_CollectData.h"
+#include "stdio.h"
+
 /* ************************************************************************************************************
 * Function Name : isInRange
 * Description   : Checks the current value within the maximum & minimum value
