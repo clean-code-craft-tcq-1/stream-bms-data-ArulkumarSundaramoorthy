@@ -31,6 +31,8 @@ float BmsSender_ReadTemperture()
 {
   float Temperture = 0;
   
+  Temperture = random_float(MIN_TEMP, MAX_TEMP);
+  
   if(isInRange(Temperture, MIN_TEMP, MAX_TEMP))
   {
     return Temperture;
@@ -48,6 +50,8 @@ float BmsSender_ReadTemperture()
 float BmsSender_ReadSOC()
 {
   float Soc = 0;
+  
+  Soc = random_float(MIN_SOC, MAX_SOC);
   
   if(isInRange(Soc, MIN_SOC, MAX_SOC))
   {
