@@ -71,5 +71,6 @@ void test_print()
   for(int i=0;i<=20;i++)
   {
     printf("Value %d - %f\n",i,random_float(MIN_TEMP,MAX_TEMP));
+    Sleep(500);
   }
 }
