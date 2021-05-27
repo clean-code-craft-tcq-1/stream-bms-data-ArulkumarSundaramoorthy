@@ -11,8 +11,6 @@
 #include "stdio.h"
 #include "stdlib.h"
 
-/* ****************************************** Variables ***************************************************** */
-SendStatus(*SendData[])(Temperature, Soc) = {sendToConsole};
 
 /* Function Details *******************************************************************************************
 * Function Name : sendToConsole
