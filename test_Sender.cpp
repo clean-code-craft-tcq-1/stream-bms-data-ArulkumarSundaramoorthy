@@ -1,7 +1,7 @@
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 
 #include "test/catch.hpp"
-#include "Sender_CollectData.h"
+#include "BMS_Sender/Sender_CollectData.h"
 
 
 TEST_CASE("infers the breach according to limits LOW") {
