@@ -7,6 +7,7 @@
 
 /* **************************************** Header Files **************************************************** */
 #include "Sender_CollectData.h"
+#include "Sender_SentType.h"
 #include "stdio.h"
 #include "stdlib.h"
 
@@ -17,8 +18,14 @@
 * Returns       : 
 * *********************************************************************************************************** */
 int main() {
-
+    float Temperature;
+    float Soc;
+    SendStatus status;
     
-        test_print();
-  return 0;
+    Temperature = BmsSender_ReadTemperture();
+    Soc = BmsSender_ReadSOC();
+        
+    status = SendData[TO_CONSOLE](Temperature, Soc);
+    
+    return status;
 }
