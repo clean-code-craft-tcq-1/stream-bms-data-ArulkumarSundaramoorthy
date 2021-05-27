@@ -8,6 +8,7 @@
 /* **************************************** Header Files **************************************************** */
 #include "Sender_CollectData.h"
 #include "stdio.h"
+#include "stdlib.h"
 
 /* Function Details *******************************************************************************************
 * Function Name : isInRange
@@ -54,4 +55,21 @@ float BmsSender_ReadSOC()
   }
   
   return ERROR_SOC;
+}
+
+float random_float(const float min, const float max)
+{
+    if (max == min) return min;
+    else if (min < max) return (max - min) * ((float)rand() / RAND_MAX) + min;
+
+    // return 0 if min > max
+    return 0;
+}
+
+void test_print()
+{
+  for(int i=0;i<=20;i++)
+  {
+    printf("Value %d - %f\n",i,random_float(MIN_TEMP,MAX_TEMP));
+  }
 }
