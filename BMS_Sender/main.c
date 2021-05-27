@@ -14,18 +14,14 @@
 /* Function Details *******************************************************************************************
 * Function Name : main
 * Description   : main function to transmit data for every 1 seconds
-* Arguments     : 
-* Returns       : 
+* Arguments     : -
+* Returns       : SendStatus
 * *********************************************************************************************************** */
 int main() {
-    float Temperature;
-    float Soc;
+    
     SendStatus status;
     
-    Temperature = BmsSender_ReadTemperture();
-    Soc = BmsSender_ReadSOC();
-        
-    status = SendData[TO_CONSOLE](Temperature, Soc);
+    status = BMS_SendData(TO_CONSOLE);
     
     return status;
 }
