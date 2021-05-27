@@ -15,7 +15,7 @@
 * Function Name : main
 * Description   : main function to transmit data for every 1 seconds
 * Arguments     : -
-* Returns       : SendStatus
+* Returns       : 0
 * *********************************************************************************************************** */
 int main() {
     
