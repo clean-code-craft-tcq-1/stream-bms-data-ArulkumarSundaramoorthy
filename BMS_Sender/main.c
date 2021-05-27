@@ -23,7 +23,7 @@ int main() {
     
     for(int i=0;i<=10;i++)
     {
-    status = BMS_SendData(TO_CONSOLE);
+    BMS_SendData(TO_CONSOLE);
     }
     
     return 0;
