@@ -16,4 +16,4 @@ typedef enum {
 
 /* ***************************** Prototypes ***************************** */
 SendStatus sendToConsole(float Temperature, float Soc);
-extern SendStatus(*SendData[])(float, float) = {sendToConsole};
+SendStatus BMS_SendData(SendType sendType);
