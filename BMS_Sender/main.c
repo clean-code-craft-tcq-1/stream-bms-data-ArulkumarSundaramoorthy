@@ -23,5 +23,5 @@ int main() {
     
     status = BMS_SendData(TO_CONSOLE);
     
-    return status;
+    return 0;
 }
