@@ -9,6 +9,7 @@
 #include "Sender_CollectData.h"
 #include "Sender_SentType.h"
 #include "stdio.h"
+#include "string.h"
 
 /* ***************************************** Variables ****************************************************** */
 SendStatus(*SendData[])(float, float) = {sendToConsole};
@@ -42,7 +43,7 @@ SendStatus BMS_SendData(SendType sendType)
 * *********************************************************************************************************** */
 SendStatus sendToConsole(float Temperature, float Soc) {
   
-  printf("Temperature:%+0003.1f,SOC:%03.1f\n", Temperature,Soc);
+  printf("Temperature:%+03.1f,SOC:%3.1f\n", Temperature,Soc);
   
   return CONSOLE_SEND_PASS;
 }
