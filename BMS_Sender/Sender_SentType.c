@@ -14,6 +14,27 @@
 /* ***************************************** Variables ****************************************************** */
 SendStatus(*SendData[])(float, float) = {sendToConsole};
 
+
+/* Function Details *******************************************************************************************
+* Function Name : BMS_SendData
+* Description   : Read Temperature & SOC Value
+* Arguments     : SendType
+* Returns       : SendStatus
+* *********************************************************************************************************** */
+SendStatus BMS_SendData(SendType sendType)
+{
+  float Temperature;
+  float Soc;
+  SendStatus status;
+
+  Temperature = BmsSender_ReadTemperture();
+  Soc = BmsSender_ReadSOC();
+
+  status = SendData[sendType](Temperature, Soc);
+  
+  return status;
+}
+
 /* Function Details *******************************************************************************************
 * Function Name : sendToConsole
 * Description   : Send tempertaure & SOC data to console
@@ -26,3 +47,4 @@ SendStatus sendToConsole(float Temperature, float Soc) {
   
   return CONSOLE_SEND_PASS;
 }
+
