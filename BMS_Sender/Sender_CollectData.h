@@ -18,5 +18,7 @@
 int isInRange(float current_value, float min_value, float max_value);
 float BmsSender_ReadTemperture();
 float BmsSender_ReadSOC();
+float random_float(const float min, const float max);
+void test_print();
 
 #endif
