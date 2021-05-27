@@ -2,6 +2,8 @@
 * File Name   :	Sender_SentType.h
 * Description : Header file for BMS Sender type selection
 * ************************************************************************* */
+#ifndef SENDER_SENTTYPE_H
+#define SENDER_SENTTYPE_H
 
 /* ******************************* Defines ******************************* */
 typedef enum {
@@ -17,3 +19,5 @@ typedef enum {
 /* ***************************** Prototypes ***************************** */
 SendStatus sendToConsole(float Temperature, float Soc);
 SendStatus BMS_SendData(SendType sendType);
+
+#endif
