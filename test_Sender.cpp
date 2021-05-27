@@ -4,6 +4,6 @@
 #include "BMS_Sender/Sender_CollectData.h"
 
 
-TEST_CASE("infers the breach according to limits LOW") {
+/*TEST_CASE("infers the breach according to limits LOW") {
 
-}
+}*/
