@@ -14,5 +14,7 @@ typedef enum {
   CONSOLE_SEND_PASS
 } SendStatus;
 
+SendStatus(*SendData[])(float, float) = {sendToConsole};
+
 /* ***************************** Prototypes ***************************** */
 SendStatus sendToConsole(float Temperature, float Soc);
