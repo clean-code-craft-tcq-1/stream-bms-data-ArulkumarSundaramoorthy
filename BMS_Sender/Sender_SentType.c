@@ -11,6 +11,8 @@
 #include "stdio.h"
 #include "stdlib.h"
 
+/* ***************************************** Variables ****************************************************** */
+SendStatus(*SendData[])(float, float) = {sendToConsole};
 
 /* Function Details *******************************************************************************************
 * Function Name : sendToConsole
