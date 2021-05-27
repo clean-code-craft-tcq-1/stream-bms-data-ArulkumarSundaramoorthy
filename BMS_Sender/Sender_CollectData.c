@@ -9,7 +9,6 @@
 #include "Sender_CollectData.h"
 #include "stdio.h"
 #include "stdlib.h"
-#include "time.h"
 
 /* Function Details *******************************************************************************************
 * Function Name : isInRange
@@ -58,20 +57,15 @@ float BmsSender_ReadSOC()
   return ERROR_SOC;
 }
 
+/* Function Details *******************************************************************************************
+* Function Name : random_float
+* Description   : Generate Random numbers between Minimum & Maximum Value in float
+* Arguments     : min(float), max(flaot)
+* Returns       : Random value between Mini & Max value in float
+* *********************************************************************************************************** */
 float random_float(const float min, const float max)
 {
-    if (max == min) return min;
-    else if (min < max) return (max - min) * ((float)rand() / RAND_MAX) + min;
-
-    // return 0 if min > max
+    if (min < max) return (max - min) * ((float)rand() / RAND_MAX) + min;
+  
     return 0;
-}
-
-void test_print()
-{
-  for(int i=0;i<=20;i++)
-  {
-    printf("Value %d - %f\n",i,random_float(MIN_TEMP,MAX_TEMP));
-    Sleep(500);
-  }
 }
