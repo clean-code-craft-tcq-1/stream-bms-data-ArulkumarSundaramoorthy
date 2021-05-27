@@ -16,4 +16,3 @@ typedef enum {
 
 /* ***************************** Prototypes ***************************** */
 SendStatus sendToConsole(float Temperature, float Soc);
-SendStatus(*SendData[])(float, float) = {sendToConsole};
