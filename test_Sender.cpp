@@ -2,6 +2,7 @@
 
 #include "test/catch.hpp"
 #include "BMS_Sender/Sender_CollectData.h"
+#include "Sender_SentType.h"
 
 
 TEST_CASE("Test case to test the value within Positive Range") 
