@@ -2,12 +2,11 @@
 * File Name   :	Sender_CollectData.c
 * Author      : Arul Kumar Sundaramoorthy
 * Description : Battery Management System(BMS) Data Collection like Battery temperature and State of Charging
-* Functions   : isInRange, BmsSender_ReadTemperture, BmsSender_ReadSOC
+* Functions   : isInRange, BmsSender_ReadTemperture, BmsSender_ReadSOC, random_float
 * *********************************************************************************************************** */
 
 /* **************************************** Header Files **************************************************** */
 #include "Sender_CollectData.h"
-#include "stdio.h"
 #include "stdlib.h"
 
 /* Function Details *******************************************************************************************
@@ -25,7 +24,7 @@ int isInRange(float current_value, float min_value, float max_value)
 * Function Name : BmsSender_ReadTemperture
 * Description   : Collect Battery Temperature Data from Sensor/DataSet
 * Arguments     : -
-* Returns       : Temperature value in float with one resolution
+* Returns       : Temperature value in float
 * *********************************************************************************************************** */
 float BmsSender_ReadTemperture()
 {
@@ -45,7 +44,7 @@ float BmsSender_ReadTemperture()
 * Function Name : BmsSender_ReadSOC
 * Description   : Collect Battery SOC Data from Sensor/DataSet
 * Arguments     : -
-* Returns       : SOC value in float with one resolution
+* Returns       : SOC value in float
 * *********************************************************************************************************** */
 float BmsSender_ReadSOC()
 {
