@@ -4,6 +4,22 @@
 #include "BMS_Sender/Sender_CollectData.h"
 
 
-/*TEST_CASE("infers the breach according to limits LOW") {
+TEST_CASE("Test case to test the value within Positive Range") 
+{
+  REQUIRE(isInRange(2,0,50)== 1);
+}
 
-}*/
+TEST_CASE("Test case to test the value within Negative Range") 
+{
+  REQUIRE(isInRange(-2,-50,50)== 1);
+}
+
+TEST_CASE("Test case to test the value invaild Positive Range") 
+{
+  REQUIRE(isInRange(3,5,10)== 0);
+}
+
+TEST_CASE("Test case to test the value invaild Negative Range") 
+{
+  REQUIRE(isInRange(-3,-1,10)== 0);
+}
