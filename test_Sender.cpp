@@ -59,6 +59,6 @@ TEST_CASE("Test for invalid Random values")
 
 TEST_CASE("Test for Send BMS data") 
 { 
-  REQUIRE(BMS_SendData(sendToConsole) == CONSOLE_SEND_PASS);
+  REQUIRE(BMS_SendData(TO_CONSOLE) == CONSOLE_SEND_PASS);
 }
 
