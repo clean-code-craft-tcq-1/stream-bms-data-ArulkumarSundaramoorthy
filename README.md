@@ -1,5 +1,7 @@
-**BMS Sender Data Format**
-Temperature:+076.0,SOC:039.4# Streaming BMS Data
+# BMS Sender Data Format
+Temperature:+076.0,SOC:039.4
+
+# Streaming BMS Data
 
 This project is about sending and receiving BMS data.
 
