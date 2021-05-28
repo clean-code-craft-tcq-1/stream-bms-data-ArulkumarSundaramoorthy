@@ -75,5 +75,12 @@ float BmsSender_ReadSOC()
 * *********************************************************************************************************** */
 float random_float(const float min, const float max)
 {
+  if(min < max)
+  {
     return (max - min) * ((float)rand() / RAND_MAX) + min;
+  }
+  else
+  {
+    return 0;
+  }
 }
