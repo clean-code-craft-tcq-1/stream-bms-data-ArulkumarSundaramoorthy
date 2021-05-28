@@ -42,5 +42,5 @@ TEST_CASE("Test for valid Random values")
 {
   float random_value = 0;
   random_value = random_float(0,100);
-  REQUIRE(0 <=random_value >= 100);
+  REQUIRE((float)0 <= random_value >= (float)100);
 }
