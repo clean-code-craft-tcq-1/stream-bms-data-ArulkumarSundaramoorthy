@@ -44,5 +44,5 @@ TEST_CASE("Test for valid Random values")
   float min = 0;
   float max = 100;
   random_value = random_float(min,max);
-  REQUIRE(min <= random_value >= max);
+  REQUIRE((min <= random_value) && (random_value <= max));
 }
