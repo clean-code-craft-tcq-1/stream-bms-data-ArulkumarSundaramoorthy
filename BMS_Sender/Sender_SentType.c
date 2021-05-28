@@ -43,7 +43,7 @@ SendStatus BMS_SendData(SendType sendType)
 * *********************************************************************************************************** */
 SendStatus sendToConsole(float Temperature, float Soc) {
   
-  printf("Temperature:%+06.1f,SOC:%05.1f\n", Temperature,Soc);
+  printf("Temperature:%+06.1f,SOC:%05.1f$\n", Temperature,Soc);
   
   return CONSOLE_SEND_PASS;
 }
