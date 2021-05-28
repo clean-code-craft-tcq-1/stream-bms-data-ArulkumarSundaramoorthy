@@ -26,3 +26,21 @@ TEST_CASE("Test case to test the value invaild Negative Range")
 {
   REQUIRE(isInRange(-3,-1,10)== 0);
 }
+
+
+TEST_CASE("Test for valid temperature values") 
+{
+  REQUIRE(BmsSender_ReadTemperture()!= 255);
+}
+
+TEST_CASE("Test for valid SOC values") 
+{
+  REQUIRE(BmsSender_ReadSOC()!= 255);
+}
+
+TEST_CASE("Test for valid Random values") 
+{
+  float random_value = 0;
+  random_value = random_float(0,100);
+  REQUIRE(0 <=random_value >= 100);
+}
