@@ -57,3 +57,8 @@ TEST_CASE("Test for invalid Random values")
   REQUIRE(random_float(min,max) == 0);
 }
 
+TEST_CASE("Test for Send BMS data") 
+{ 
+  REQUIRE(BMS_SendData(sendToConsole) == CONSOLE_SEND_PASS);
+}
+
