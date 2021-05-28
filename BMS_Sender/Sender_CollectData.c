@@ -17,7 +17,14 @@
 * *********************************************************************************************************** */
 int isInRange(float current_value, float min_value, float max_value)
 {
-  return((current_value >= min_value) && (current_value <= max_value));
+  if((current_value >= min_value) && (current_value <= max_value))
+  {
+    return 1;
+  }
+  else
+  {
+    return 0;
+  }
 }
 
 /* Function Details *******************************************************************************************
