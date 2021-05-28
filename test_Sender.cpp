@@ -41,6 +41,8 @@ TEST_CASE("Test for valid SOC values")
 TEST_CASE("Test for valid Random values") 
 {
   float random_value = 0;
-  random_value = random_float(0,100);
-  REQUIRE((float)0 <= random_value >= (float)100);
+  float min = 0;
+  float max = 100;
+  random_value = random_float(min,max);
+  REQUIRE(min <= random_value >= max);
 }
