@@ -1,5 +1,5 @@
 # BMS Sender Data Format
-Temperature:+076.0,SOC:039.4
+Temperature:+076.0,SOC:039.4$
 
 # Streaming BMS Data
 
