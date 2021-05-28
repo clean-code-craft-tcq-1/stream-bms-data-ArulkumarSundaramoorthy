@@ -1,9 +1,8 @@
 # BMS Sender Data Format
-**Valid Data**
-
-Temperature:+076.0,SOC:039.4$
+**Valid Data** - "Temperature:+076.0,SOC:039.4$"
 
 If Invalid means values are filled with 255
+---------------------------------------------------------------------------------------------------------------
 
 # Streaming BMS Data
 
