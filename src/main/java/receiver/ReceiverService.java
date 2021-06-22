@@ -15,7 +15,7 @@ public class ReceiverService {
 	private static ReportingService reporter = new ReportingService();
 
 	public static boolean minMaxAvgTemp(List<ResponseModel> responseData) {
-		
+
 		List<Float> temperatureList = getTemperaturesList(responseData);
 
 		if (!DataValidator.isValidList(temperatureList))
@@ -29,14 +29,15 @@ public class ReceiverService {
 
 		return true;
 	}
-	
-	public static List<Float> getTemperaturesList(List<ResponseModel> responseData){
+
+	public static List<Float> getTemperaturesList(List<ResponseModel> responseData) {
 		List<Float> tempertures = new ArrayList<Float>();
-		if(responseData!=null)
-		responseData.forEach(data->{
-			System.out.println(data.getTemperature());
-			tempertures.add(data.getTemperature());
-		});
+		if (responseData != null) {
+			for(ResponseModel data : responseData)
+			{
+				tempertures.add(data.getTemperature());
+			}
+		}
 		return tempertures;
 	}
 
@@ -53,14 +54,16 @@ public class ReceiverService {
 		reporter.printProcessedData(BMSConstants.SOC, batteryCharacteristic);
 
 		return true;
-	}	
-	
-	public static List<Float> getSocList(List<ResponseModel> response){
+	}
+
+	public static List<Float> getSocList(List<ResponseModel> responseData) {
 		List<Float> socList = new ArrayList<Float>();
-		if(response!=null)
-		response.forEach(data->{
-			socList.add(data.getSOC());
-		});
+		if (responseData != null) {
+			for(ResponseModel data : responseData)
+			{
+				socList.add(data.getSOC());
+			}
+	}
 		return socList;
 	}
 }
