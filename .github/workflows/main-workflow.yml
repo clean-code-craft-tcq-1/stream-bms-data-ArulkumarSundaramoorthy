@@ -54,4 +54,4 @@ jobs:
     - name: Build Sender and Receiver Packages
       run:  mvn -B package --file pom.xml -Dmaven.test.skip=true
     - name: Pipe sender to 
-      run: ./bmssender | java -jar target/stream-bms-data-ArulkumarSundaramoorthy-0.0.1-SNAPSHOT.jar
+      run: ./bmssender | java -jar target/ReceiverService.jar
