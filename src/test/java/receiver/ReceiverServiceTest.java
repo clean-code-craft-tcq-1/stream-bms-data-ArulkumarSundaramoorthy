@@ -42,7 +42,6 @@ public class ReceiverServiceTest {
 	public void nullCheck() {
 		assertFalse(ReceiverService.minMaxAvgTemp(null));
 		assertFalse(ReceiverService.minMaxAvgSOC(null));
-
 	}
 	
 	@Test
